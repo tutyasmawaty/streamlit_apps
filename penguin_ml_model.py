@@ -12,7 +12,7 @@ penguin_df = pd.read_csv("penguins.csv")
 penguin_df.dropna(inplace=True)
 
 output = penguin_df['species'] #target
-features = penguin_df[['island','bill_length_mm','flipper_length_mm','body_mass_g','sex']]
+features = penguin_df[['island','bill_length_mm','bill_depth_mm','flipper_length_mm','body_mass_g','sex']]
 
 #original after cleaning nan value
 #print(output.tail())
